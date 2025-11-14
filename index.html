@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pi Online School</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- HERO -->
+  <section class="w-full h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center px-6">
+    <div class="max-w-3xl">
+      <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Pi Online School</h1>
+      <p class="text-2xl font-semibold mb-6 italic">“Unlock Your Potential with Pi — Learning Made Simple”</p>
+      <a href="#enroll" class="bg-white text-blue-700 px-8 py-3 rounded-2xl font-bold shadow-xl hover:bg-gray-100 transition">Enroll Now</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">What We Offer</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Online Lectures</h3>
+        <p>Group & one-on-one via WhatsApp and Zoom.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Revision Classes</h3>
+        <p>Focused exam-style practice and past paper walkthroughs.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">Project Assistance</h3>
+        <p>Structured help for school projects and coursework.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBJECTS -->
+  <section id="subjects" class="max-w-7xl mx-auto px-6 py-12 bg-indigo-50 rounded-xl">
+    <h2 class="text-3xl font-bold mb-6 text-center">Subjects (ZIMSEC)</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">A Level</h3>
+        <ul class="list-disc list-inside">
+          <li>Pure Mathematics</li>
+          <li>Statistics</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold mb-2">O Level</h3>
+        <ul class="list-disc list-inside">
+          <li>Mathematics (Syllabus A & B)</li>
+          <li>B.E.S</li>
+          <li>Commerce</li>
+          <li>Geography</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEES -->
+  <section id="fees" class="max-w-4xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">Fees Structure</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">A Level</h3>
+        <p class="text-3xl font-bold mb-2">$15/month</p>
+        <p>Group lessons, revision & project support.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">O Level</h3>
+        <p class="text-3xl font-bold mb-2">$10/month</p>
+        <p>Group lessons & revision classes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT METHODS -->
+  <section class="max-w-6xl mx-auto px-6 py-12 text-center">
+    <h2 class="text-3xl font-bold mb-6">Payment Methods</h2>
+    <p class="mb-4">Flexible and secure options:</p>
+    <ul class="list-disc list-inside space-y-2">
+      <li>EcoCash</li>
+      <li>Mukuru</li>
+      <li>Innbucks</li>
+      <li>Bank Transfer</li>
+      <li>All payments are receipted</li>
+    </ul>
+  </section>
+
+  <!-- GUARANTEES -->
+  <section class="max-w-6xl mx-auto px-6 py-12 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our Guarantees</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Guaranteed syllabus completion before exams</li>
+      <li>Zero overcrowding: Only 10 learners per class</li>
+      <li>Professional, disciplined & monitored lessons</li>
+      <li>Fast enrollment — takes less than 2 minutes</li>
+    </ul>
+  </section>
+
+  <!-- ENROLL -->
+  <section id="enroll" class="max-w-3xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-6 text-center">Enroll Now</h2>
+    <form class="grid grid-cols-1 gap-4">
+      <input class="border rounded-md p-2" placeholder="Full Name" required>
+      <input class="border rounded-md p-2" type="email" placeholder="Email" required>
+      <input class="border rounded-md p-2" placeholder="Phone (e.g., 07...)" required>
+      <select class="border rounded-md p-2" required>
+        <option value="">Choose Level</option>
+        <option value="A Level">A Level</option>
+        <option value="O Level">O Level</option>
+      </select>
+      <textarea class="border rounded-md p-2" placeholder="Message (optional)"></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12 py-6">
+    <div class="max-w-7xl mx-auto px-6 text-center text-gray-600">
+      <p>Contact: 0714543264 / 0785312817</p>
+      <p>Platforms: WhatsApp, Zoom • Payments: EcoCash</p>
+      <p class="mt-2">© 2025 Pi Online School — All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
