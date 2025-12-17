@@ -1,0 +1,19 @@
+
+/* Pi Online School - shared styles */
+body { margin:0; font-family: Arial, sans-serif; background:#f7f7fb; color:#1f2937; }
+.container { max-width:1000px; margin:0 auto; padding:24px; }
+header { background: linear-gradient(135deg,#2a2a72,#009ffd); color:white; padding:18px 0; position:sticky; top:0; z-index:50; }
+.nav { display:flex; align-items:center; justify-content:space-between; max-width:1000px; margin:0 auto; padding:0 16px; }
+.brand { display:flex; align-items:center; gap:12px; font-weight:700; }
+.brand .logo { width:40px; height:40px; display:inline-block; border-radius:8px; background:white; color:#2a2a72; font-weight:700; display:flex; align-items:center; justify-content:center; }
+nav a { color:white; margin-left:12px; text-decoration:none; font-weight:600; }
+.hero { padding:72px 16px; text-align:center; color:white; }
+.hero h1 { font-size:36px; margin:0 0 8px; }
+.hero p { margin:0 0 16px; font-size:18px; opacity:0.95; }
+.card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+.card { background:white; padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(31,41,55,0.06); }
+footer { text-align:center; padding:18px 0; color:#6b7280; margin-top:32px; }
+form input, form select, form textarea { width:100%; padding:10px; margin-bottom:10px; border-radius:6px; border:1px solid #e5e7eb; }
+button.primary { background:#2a2a72; color:white; padding:10px 16px; border:none; border-radius:6px; cursor:pointer; font-weight:700; }
+.small { font-size:14px; color:#6b7280; }
+@media (max-width:600px){ .hero h1{font-size:28px;} .nav{padding:0 8px;} }

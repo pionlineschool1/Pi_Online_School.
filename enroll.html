@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Enroll - Pi Online School</title><link rel="icon" href="pi_logo.png"><link rel="stylesheet" href="style.css"></head><body>
+<header>
+  <div class="nav">
+    <div class="brand"><div class="logo"><img src="pi_logo.png" alt="pi" style="width:28px;height:28px;"></div><div>Pi Online School</div></div>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="subjects.html">Subjects</a><a href="enroll.html">Enroll</a><a href="contact.html">Contact</a></nav>
+  </div>
+  <div class="hero container"><h1>Enroll Now</h1><p>Fill the form below to register interest.</p></div>
+</header>
+<main class="container">
+  <section class="card">
+    <form id="enrollForm">
+      <input name="name" placeholder="Full Name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="phone" placeholder="Phone (e.g., 07...)" required>
+      <select name="level" required>
+        <option value="">Choose Level</option>
+        <option value="A Level">A Level</option>
+        <option value="O Level">O Level</option>
+      </select>
+      <textarea name="message" placeholder="Message (optional)"></textarea>
+      <button class="primary" type="submit">Submit Enrollment</button>
+    </form>
+    <p id="status" class="small"></p>
+  </section>
+</main>
+<script>
+const form = document.getElementById('enrollForm');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    level: form.level.value,
+    message: form.message.value
+  };
+  const url = "https://script.google.com/macros/s/AKfycbwTtHbWrxJWNbsc3aQqsljpo7r416SzgMHMnpU2hreZp191JIW7kLzgjYpFNMPK224tIw/exec";
+  try {
+    const resp = await fetch(url, { method: 'POST', body: JSON.stringify(data) });
+    if (resp.ok) {
+      document.getElementById('status').innerText = 'Enrollment submitted — thank you!';
+      form.reset();
+    } else {
+      document.getElementById('status').innerText = 'Submission failed. Please try again.';
+    }
+  } catch (err) {
+    document.getElementById('status').innerText = 'Error sending. Please check your connection.';
+  }
+});
+</script>
+<footer><div class="container"><p class="small">We respect your privacy. Your data is stored securely.</p></div></footer>
+</body></html>
